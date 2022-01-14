@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBook</title>
+   <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-14 bg-gradient-to-r from-purple-500 to-pink-500">
+    <nav>
+        
+         <img class="m-auto block w-28 h-28" src="logo.png" alt="logo">
+         <h1 class="font-Segoe UI text-3xl text-center">Welcome To ChatBook  Group Chat</h1>
+    </nav> 
+
+    <div id="container" class="m-auto max-w-5xl py-2 h-96 border-2 solid border-black  overflow-y-auto mb-8">
+        
+    </div>
+
+
+    <div>
+        <form action="#" id="send-message" class="block m-auto text-center max-w-5xl w-full">
+            <input type="text"  class="w-5/6 p-2 border-2 solid border-black rounded-lg" name="messageInp" id="messageInp">
+            <button class="cursor-pointer p-2 bg-gray-500 border-2 solid border-black w-32 rounded-lg" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
